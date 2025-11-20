@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I Love You Priya 
+you make my life bright 
+  you are my favourite person 💖</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(#ff9acb, #ffb7df, #ffd6ea);
+        height: 100vh;
+        overflow: hidden;
+    }
+    h1{
+        font-size: 55px;
+        color: white and black;
+        margin-top: 15%;
+        text-shadow: 2px 2px 8px #ff008c;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow{
+        from { text-shadow: 0 0 10px #ff008c; }
+        to { text-shadow: 0 0 25px #ff4db8; }
+    }
+    .heart {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #ff0066;
+        transform: rotate(-45deg);
+        animation: float 8s infinite ease-in-out;
+    }
+    .heart:before, .heart:after teddy seat in side  {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #ff0066;
+        border-radius: 50%;
+    }
+    .heart:before { top: -25px; left: 0; }
+    .heart:after { left: 25px; top: 0; }
+
+    @keyframes float {
+        0% { bottom: -10%; opacity: 0; left: 20%; }
+        50% { opacity: 1; }
+        100% { bottom: 100%; opacity: 0; left: 80%; }
+    }
+</style>
+</head>
+<body>
+
+<h1>I Love You Priya 💖</h1>
+
+<script>
+for(let i=0; i<15; i++){
+    let heart = document.createElement("div");
+    heart.className = "heart" "teddy";
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.animationDuration = (3 + Math.random()*4) + "s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
